@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+header {
+  background: #003366;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+
+header .title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header input[type="search"] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.welcome {
+  text-align: center;
+  padding: 2rem;
+  background: #e3f2fd;
+}
+
+.welcome h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.gallery-item {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  opacity: 0.9;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+
+.content {
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+.row img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+}
+
+.text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Language Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <header>
+    <div class="title">Languge Learn</div>
+    <input type="search" placeholder="Search Courses..." />
+  </header>
+
+  
+  <section class="banner">
+    <img src="lab2_img1.jpg" alt="Language Learning Banner" />
+  </section>
+
+  
+  <section class="welcome">
+    <h2>Welcome to Language Learn</h2>
+    <p>Explore global languages with interactive lessons, expert tutors, and practice tools. Whether you're learning for travel, career, or fun — start your journey here!</p>
+  </section>
+
+  
+  <section class="gallery">
+    <div class="gallery-item" style="background-image: url('lab2_img2.webp');">
+      <div class="caption">English</div>
+    </div>
+    <div class="gallery-item" style="background-image: url('lab2_img3.jpg');">
+      <div class="caption">French</div>
+    </div>
+    <div class="gallery-item" style="background-image: url('lab2_img4.jpg');">
+      <div class="caption">Spanish</div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="row">
+      <img src="lab2_img5.avif" alt="Classroom" />
+      <div class="text">
+        <h3>Live Classes</h3>
+        <p>Join our daily interactive sessions and communicate with expert tutors to build confidence and fluency.</p>
+      </div>
+    </div>
+    <div class="row reverse">
+      <div class="text">
+        <h3>Mobile Learning</h3>
+        <p>Access our courses anytime, anywhere. Track your progress and set goals directly from your phone or tablet.</p>
+      </div>
+      <img src="Lab2_img6.webp" alt="Mobile Learning" />
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 Language Learn. All Rights Reserved.</p>
+  </footer>
+  
+
+</body>
+</html>
+
+
